@@ -1,0 +1,15 @@
+[
+	{
+		"inputs": [],
+		"name": "foo",
+		"outputs": [
+			{
+				"internalType": "bytes32[]",
+				"name": "_ret",
+				"type": "bytes32[]"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]

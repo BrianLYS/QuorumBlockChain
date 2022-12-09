@@ -1,0 +1,29 @@
+pragma solidity ^0.8.0;
+contract Mortal {
+    /* Define variable owner of the type address*/
+    address payable owner;
+
+    /* this function is executed at initialization and sets the owner of the contract */
+    constructor() { owner = msg.sender; }
+
+    /* Function to recover the funds on the contract */
+    function kill() public {
+    require(msg.sender == owner, "Only the owner can call this method");
+    selfdestruct(owner);
+    }
+}
+
+contract Greeter is Mortal {
+    /* define variable greeting of the type string */
+    string greeting;
+
+    /* this runs when the contract is executed */
+    constructor (string memory _greeting) {
+        greeting = _greeting;
+    }
+
+    /* main function */
+    function greet() public view returns (string memory) {
+        return greeting;
+    }
+}
