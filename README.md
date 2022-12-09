@@ -16,7 +16,7 @@ cd quorum-dev-quickstart
 ## Run Cakeshop
 
 ```
-cd cakeshop/quorum-dev-quickstart
+cd /cakeshop-master/quorum-dev-quickstart 
 docker-compose up -d
 
 # To Stop
