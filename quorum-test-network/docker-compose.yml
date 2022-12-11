@@ -127,6 +127,7 @@ services:
         ipv4_address: 172.16.239.11
 
   validator2:
+    user: root
     <<: *quorum-def
     ports:
       - 21002:8545/tcp
@@ -144,6 +145,7 @@ services:
         ipv4_address: 172.16.239.12
 
   validator3:
+    user: root
     <<: *quorum-def
     ports:
       - 21003:8545/tcp
@@ -161,6 +163,7 @@ services:
         ipv4_address: 172.16.239.13
 
   validator4:
+    user: root
     <<: *quorum-def
     ports:
       - 21004:8545/tcp
@@ -178,6 +181,7 @@ services:
         ipv4_address: 172.16.239.14
 
   rpcnode:
+    user: root
     <<: *quorum-def
     container_name: rpcnode
     ports:
@@ -197,6 +201,7 @@ services:
         ipv4_address: 172.16.239.15
 
   member1tessera:
+    user: root
     <<: *tessera-def
     ports:
       - 9081:9080
@@ -208,6 +213,7 @@ services:
         ipv4_address: 172.16.239.26
 
   member1quorum:
+    user: root
     <<: *quorum-def
     ports:
       - 20000:8545/tcp
@@ -229,6 +235,7 @@ services:
         ipv4_address: 172.16.239.16
 
   member2tessera:
+    user: root
     <<: *tessera-def
     ports:
       - 9082:9080
@@ -240,6 +247,7 @@ services:
         ipv4_address: 172.16.239.27
 
   member2quorum:
+    user: root
     <<: *quorum-def
     ports:
       - 20002:8545/tcp
@@ -261,6 +269,7 @@ services:
         ipv4_address: 172.16.239.17
 
   member3tessera:
+    user: root
     <<: *tessera-def
     ports:
       - 9083:9080
@@ -272,6 +281,7 @@ services:
         ipv4_address: 172.16.239.28
 
   member3quorum:
+    user: root
     <<: *quorum-def
     ports:
       - 20004:8545/tcp
