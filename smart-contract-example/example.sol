@@ -14,3 +14,10 @@ contract SimpleContract {
         return isCompleted;
     }
 }
+
+
+/*
+After the contract is deployed, external accounts can interact with it by calling its functions and sending transactions to it. 
+For example, an external account can call the setCompleted function to set the state of the contract, and then call the checkCompleted function to check its
+state.
+*/
