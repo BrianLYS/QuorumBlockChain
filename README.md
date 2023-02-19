@@ -1,5 +1,18 @@
 # QuorumBlockChain
 
+## wth is this repo
+
+This repo makes use of cakeshop and quorum-quick-start
+
+so you don't have to run
+
+```
+npx quorum-dev-quickstart
+git clone git@github.com:ConsenSys/cakeshop.git
+```
+
+and includes various examples of sol contracts inside of quorum-test-network/smart_contracts/..
+
 ## Run quorum quick start
 
 ```

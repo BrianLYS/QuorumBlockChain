@@ -4,3 +4,4 @@ quorum-test-network/dapps/pet-shop/pet-shop-box/
 SimpleStorage_sol_SimpleStorage.abi
 SimpleStorage_sol_SimpleStorage.bin
 SimpleStorage.json
+node_modules
